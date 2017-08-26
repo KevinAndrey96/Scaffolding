@@ -1,0 +1,27 @@
+<%= form_with(model: proyecto_patrocinador, local: true) do |form| %>
+  <% if proyecto_patrocinador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(proyecto_patrocinador.errors.count, "error") %> prohibited this proyecto_patrocinador from being saved:</h2>
+
+      <ul>
+      <% proyecto_patrocinador.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :proyecto_id %>
+    <%= form.text_field :proyecto_id, id: :proyecto_patrocinador_proyecto_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :patrocinador_id %>
+    <%= form.text_field :patrocinador_id, id: :proyecto_patrocinador_patrocinador_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

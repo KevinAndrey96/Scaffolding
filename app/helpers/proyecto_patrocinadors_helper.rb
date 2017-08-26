@@ -1,0 +1,2 @@
+module ProyectoPatrocinadorsHelper
+end

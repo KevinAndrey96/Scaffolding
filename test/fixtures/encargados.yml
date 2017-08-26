@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  carrera: MyString
+  semestre: 1
+  proyecto: one
+
+two:
+  nombre: MyString
+  carrera: MyString
+  semestre: 1
+  proyecto: two

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Proyecto:</strong>
+  <%= @proyecto_patrocinador.proyecto %>
+</p>
+
+<p>
+  <strong>Patrocinador:</strong>
+  <%= @proyecto_patrocinador.patrocinador %>
+</p>
+
+<%= link_to 'Edit', edit_proyecto_patrocinador_path(@proyecto_patrocinador) %> |
+<%= link_to 'Back', proyecto_patrocinadors_path %>

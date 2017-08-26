@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @encargado.nombre %>
+</p>
+
+<p>
+  <strong>Carrera:</strong>
+  <%= @encargado.carrera %>
+</p>
+
+<p>
+  <strong>Semestre:</strong>
+  <%= @encargado.semestre %>
+</p>
+
+<p>
+  <strong>Proyecto:</strong>
+  <%= @encargado.proyecto %>
+</p>
+
+<%= link_to 'Edit', edit_encargado_path(@encargado) %> |
+<%= link_to 'Back', encargados_path %>

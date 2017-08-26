@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Proyecto Patrocinadors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Proyecto</th>
+      <th>Patrocinador</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proyecto_patrocinadors.each do |proyecto_patrocinador| %>
+      <tr>
+        <td><%= proyecto_patrocinador.proyecto %></td>
+        <td><%= proyecto_patrocinador.patrocinador %></td>
+        <td><%= link_to 'Show', proyecto_patrocinador %></td>
+        <td><%= link_to 'Edit', edit_proyecto_patrocinador_path(proyecto_patrocinador) %></td>
+        <td><%= link_to 'Destroy', proyecto_patrocinador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proyecto Patrocinador', new_proyecto_patrocinador_path %>

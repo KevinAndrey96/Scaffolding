@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @patrocinador.nombre %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @patrocinador.tipo %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @patrocinador.telefono %>
+</p>
+
+<%= link_to 'Edit', edit_patrocinador_path(@patrocinador) %> |
+<%= link_to 'Back', patrocinadors_path %>

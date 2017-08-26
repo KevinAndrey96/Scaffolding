@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Patrocinadors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Telefono</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @patrocinadors.each do |patrocinador| %>
+      <tr>
+        <td><%= patrocinador.nombre %></td>
+        <td><%= patrocinador.tipo %></td>
+        <td><%= patrocinador.telefono %></td>
+        <td><%= link_to 'Show', patrocinador %></td>
+        <td><%= link_to 'Edit', edit_patrocinador_path(patrocinador) %></td>
+        <td><%= link_to 'Destroy', patrocinador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Patrocinador', new_patrocinador_path %>
